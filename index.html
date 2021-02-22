@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="website">
+    <div>
+      <h1 id="title">MLB2K19API Improvement Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the API
+      </p>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        /><br />
+        <label id="email-label" for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        /><br />
+        <label id="number-label" for="number">Age (optional)</label><br />
+        <input
+          type="number"
+          id="number"
+          name="age"
+          min="18"
+          max="100"
+          placeholder="Age"
+        /><br />
+        <label for="dropdown">What is your favorite sport?</label><br />
+        <select name="sports" id="dropdown">
+          <option value="baseball">Baseball</option>
+          <option value="basketball">Basketball</option>
+          <option value="football">Football</option>
+          <option value="hockey">Hockey</option>
+          <option value="other">Other</option>
+          <option value="none">None</option>
+        </select>
+        <p>Would you recommend MLB2K19API to a friend?</p>
+        <input
+          type="radio"
+          id="definitely"
+          name="recommendation"
+          value="definitely"
+        />
+        <label for="definitely">Definitely</label><br />
+        <input type="radio" id="maybe" name="recommendation" value="maybe" />
+        <label for="maybe">Maybe</label><br />
+        <input
+          type="radio"
+          id="notsure"
+          name="recommendation"
+          value="notsure"
+        />
+        <label for="notsure">Not sure</label><br />
+        <p>
+          What would you like to see improved?
+          <small>(Check all that apply)</small>
+        </p>
+        <input type="checkbox" id="frontend" name="frontend" value="Frontend" />
+        <label for="frontend"> Frontend</label><br />
+        <input type="checkbox" id="reactcode" name="reactcode" value="React" />
+        <label for="reactcode"> React Code</label><br />
+        <label for="mlb2k19apireview">Any comments or suggestions?</label><br />
+        <textarea
+          id="mlb2k19apireview"
+          name="mlb2k19apireview"
+          rows="10"
+          cols="50"
+        ></textarea>
+        <br />
+        <button type="submit" id="submit" form="survey-form">Submit</button>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
